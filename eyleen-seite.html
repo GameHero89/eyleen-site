@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyleen's Social Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%; /* Ensures that the html and body cover full height */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevents scrolling */
+            background-color: #f4f4f4;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover; /* Ensures images always cover the full background */
+            background-position: center; /* Centers the images */
+            animation: backgroundFade 20s infinite; /* Animates the background */
+        }
+        /* Animation to cycle through background images */
+        @keyframes backgroundFade {
+            0%, 100% { background-image: url('background1.jpg'); }
+            25% { background-image: url('background2.jpg'); }
+            50% { background-image: url('background3.jpg'); }
+            75% { background-image: url('background4.jpg'); }
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Ensures container covers at least the viewport height */
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative; /* Above the background */
+            color: white; /* Text color */
+            width: 100%; /* Default full width */
+        }
+        .social-icons a {
+            margin: 10px;
+            font-size: 24px;
+            color: white; /* White icon */
+            text-decoration: none; /* Removes underlining from links */
+            vertical-align: middle; /* Aligns icons vertically */
+            filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.8)); /* Shadow for icons for better visibility */
+        }
+        .social-icons svg, .social-icons img {
+            height: 24px; /* Adjusts icon height within buttons */
+            filter: brightness(0) invert(1); /* Converts images to white */
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            color: white; /* White text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Black shadow for better visibility */
+        }
+        @media (min-width: 768px) {
+            .background {
+                width: 40%; /* Reduces background width on desktops to 70% */
+                left: 30%; /* Centers the background horizontally */
+            }
+            .container {
+                max-width: 70%; /* Aligns container width with the background on larger screens */
+                margin: 0 auto; /* Centering the container */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>This is me @eyleenofficial</h1>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/eyleenofficial" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@eyleenofficial" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://snapchat.com/add/eyleenofficial" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+            <a href="https://www.pinterest.com/eyleenofficial" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="https://twitter.com/eyleenofficial" target="_blank"><i the="fab fa-twitter"></i></a>
+            <a href="mailto:eyleenofficial@example.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.threads.net/eyleenofficial" target="_blank"><img src="threads_icon.svg" alt="Threads"></a>
+            <a href="https://tellonym.me/eyleenofficial7" target="_blank"><img src="https://www2.tellonym.me/assets/img/banner.png" alt="Tellonym"></a>
+        </div>
+    </div>
+</body>
+</html>
